@@ -14,7 +14,7 @@ Before running the project, ensure that you have Node.js and npm installed on yo
 
 2. Navigate to the project directory:
 
-   ```bash
+   ```
    cd vote-block
    ```
 
@@ -30,17 +30,17 @@ Before running the project, ensure that you have Node.js and npm installed on yo
 
 Run this command to run a local blockchain on your machine
 
-    ```bash
-        npx hardhat node
-    ```
+   ```
+   npx hardhat node
+   ```
 
 It will give you 10 accounts with some ETH to test
 
 Run this command to deploy the smart contract into the local blockchain
 
-    ```bash
-        npx hardhat run .\scripts\deploy.js --network localhost
-    ```
+   ```
+   npx hardhat run .\scripts\deploy.js --network localhost
+   ```
 
 Make sure you have deployed your smart contract on the Ethereum blockchain. Replace the variable contractAddress and contractABI in `src/App.jsx` with your actual contract address and ABI.
 
@@ -54,6 +54,6 @@ Make sure you have deployed your smart contract on the Ethereum blockchain. Repl
 
 Run the following command to start the development server:
 
-```bash
+```
 npm run dev
 ```
