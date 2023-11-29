@@ -28,7 +28,6 @@
   background-color: #0069d9;
 }
 
-
 .connected-container {
   display: flex;
   flex-direction: column;
@@ -71,14 +70,14 @@
   text-align: center;
 }
 
-
 .candidates-table {
   border-collapse: collapse;
   width: 50%;
-  text-align:center;
+  text-align: center;
 }
 
-.candidates-table th, .candidates-table td {
+.candidates-table th,
+.candidates-table td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -88,7 +87,7 @@
   background-color: #f2f2f2;
 }
 
-input[type=number] {
+input[type="number"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -96,4 +95,3 @@ input[type=number] {
   font-size: 16px;
   margin-bottom: 10px;
 }
-

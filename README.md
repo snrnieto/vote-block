@@ -1,28 +1,59 @@
-# Decentralized Voting Application
+# VoteBlock DApp
 
-This is a demo application to implement voting in solidity smart contract using ReactJS. 
-
-[Youtube Tutorial](https://youtu.be/eCn6mHTpuM0)
+VoteBlock is a decentralized application (DApp) built to facilitate secure voting using Ethereum blockchain.
 
 ## Installation
 
-After you cloned the repository, you want to install the packages using
+Before running the project, ensure that you have Node.js and npm installed on your machine.
 
-```shell
-npm install
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/snrnieto/vote-block.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd vote-block
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+### 1. Smart Contract
+
+Run this command to run a local blockchain on your machine
+
+```
+npx hardhat node
 ```
 
-You first need to compile the contract and upload it to the blockchain network. Run the following commands to compile and upload the contract.
+It will give you 10 accounts with some ETH to test
 
-```shell
-npx hardhat compile
-npx hardhat run --network volta scripts/deploy.js
+Run this command to deploy the smart contract into the local blockchain
+
+```
+npx hardhat run .\scripts\deploy.js --network localhost
 ```
 
-Once the contract is uploaded to the blockchain, copy the contract address and copy it in the .env file. You can also use another blockchain by writing the blockchain's endpoint in hardhat-config.
+Make sure you have deployed your smart contract on the Ethereum blockchain. Replace the variable contractAddress and contractABI in `src/App.jsx` with your actual contract address and ABI.
 
-Once you have pasted your private key and contract address in the .env file, simply run command
+### 2. Connect MetaMask
 
-```shell
-npm start
+1. Install [MetaMask](https://metamask.io/) in your browser.
+2. Connect MetaMask to the Ethereum Local Network given by hardhat
+3. Import Accounts given in hardhat node blockchain into Metamask
+
+### 3. Run the DApp
+
+Run the following command to start the development server:
+
+```
+npm run dev
 ```
